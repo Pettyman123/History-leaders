@@ -1,0 +1,109 @@
+{% include 'header.html' %}
+<!doctype>
+<h1> hello world</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Leaders</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .leader {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .leader img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .leader:hover img {
+            transform: scale(1.2);
+        }
+
+        .leader .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .leader:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="leader">
+            <img src="leader1.jpg" alt="Leader 1">
+            <div class="overlay">
+                <h3>Leader 1</h3>
+                <p>Description of Leader 1</p>
+            </div>
+        </div>
+
+        <div class="leader">
+            <img src="leader2.jpg" alt="Leader 2">
+            <div class="overlay">
+                <h3>Leader 2</h3>
+                <p>Description of Leader 2</p>
+            </div>
+        </div>
+
+        <div class="leader">
+            <img src="leader3.jpg" alt="Leader 3">
+            <div class="overlay">
+                <h3>Leader 3</h3>
+                <p>Description of Leader 3</p>
+            </div>
+        </div>
+
+        <div class="leader">
+            <img src="leader4.jpg" alt="Leader 4">
+            <div class="overlay">
+                <h3>Leader 4</h3>
+                <p>Description of Leader 4</p>
+            </div>
+        </div>
+
+        <!-- Add more leader entries as needed -->
+
+    </div>
+
+</body>
+</html>
+
+
+{% include 'footer.html' %}

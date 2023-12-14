@@ -1,0 +1,40 @@
+{% load static %}
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <style>
+   
+        .leader:hover .overlay {
+            opacity: 1;
+        }
+
+        /* Enlarging search bar */
+        .search-bar {
+            width: 100px;
+            transition: width 0.3s;
+            align: right;
+        }
+
+        .search-bar:focus {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="bg-dark text-white p-4">
+       
+    </header>
+
+    <div class="container">
+        <!-- Your leader entries go here -->
+    </div>
+
+</body>
+</html>
+{% include 'footer.html' %}
